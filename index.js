@@ -52,6 +52,9 @@ app.get('/bb', (req, res) => {
     res.send('<h1>Oooo Meri ZOHRAJABEEN, ISHQ DA JAM BEECHA JA</h1>')
 });
 
+app.get('/github', (req, res) => {
+    res.json(githubData);
+});
 
 // Server is always listening.
 app.listen(process.env.PORT, () => {
