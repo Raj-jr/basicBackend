@@ -18,7 +18,6 @@ app.get('/bb', (req, res) => {
 
 
 // Server is always listening.
-console.log(process.env.PORT);
 app.listen(process.env.PORT, () => {
     console.log(`Server is listening on ${port}`);
 })
