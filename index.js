@@ -1,11 +1,11 @@
 require('dotenv').config();
-console.log(process.env);
+// console.log(process.env);
 
 const express = require('express'); 
 const app = express(); 
 
 // Mention port on which listening
-const port = 3000;
+const port = 4000;
 
 app.get('/', (req, res) => {
     console.log('juicy p');
@@ -17,7 +17,8 @@ app.get('/bb', (req, res) => {
 });
 
 
-// Server is always listening. 
-app.listen(port, () => {
+// Server is always listening.
+console.log(process.env.PORT);
+app.listen(process.env.PORT, () => {
     console.log(`Server is listening on ${port}`);
 })
