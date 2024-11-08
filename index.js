@@ -1,11 +1,13 @@
 require('dotenv').config();
 // console.log(process.env);
+// Sample Data from an API: https://api.github.com/users/Raj-jr
 
 const express = require('express'); 
 const app = express(); 
 
 // Mention port on which listening
 const port = 3000;
+
 
 const githubData = {
     "login": "Raj-jr",
