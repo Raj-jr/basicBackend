@@ -8,8 +8,6 @@ const app = express();
 // Mention port on which listening
 const port = 3000;
 
-console.log('Holup');
-
 const githubData = {
     "login": "Raj-jr",
     "id": 62259763,
